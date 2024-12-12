@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des événements</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="t1">GnawaSoul</h1>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stats.html">Statistiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Liste des événements</h2>
+
+            <!-- Filtre par type ou date -->
+            <div id="filters">
+                <label for="filter-type">Filtrer par type:</label><!-- Option pour filtrer tous les types d'événements -->
+                <select id="filter-type">
+                    <option value="all">Tous</option>
+                    <option value="musique">Concert</option>
+                    <option value="film">Musique</option>
+                    <option value="danse">Art</option>
+                    <option value="art">Ateliers</option>
+                </select>
+                <label for="filter-date">Filtrer par date:</label>
+                <input type="date" id="filter-date"><!-- Champ pour filtrer les événements par date -->
+            </div>
+
+            <!-- Tableau des événements -->
+            <table id="events-table">
+                <thead>
+                    <tr>
+                        <th>Nom</th><!-- En-tête de colonne pour le nom de l'événement -->
+                        <th>Date</th><!-- En-tête de colonne pour la date de l'événement -->
+                        <th>Lieu</th><!-- En-tête de colonne pour le lieu de l'événement -->
+                        <th>Type</th><!-- En-tête de colonne pour le type d'événement -->
+                        <th>Actions</th><!-- En-tête de colonne pour les actions (détails, supprimer) -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <a class="event" href="event-details.html" class="details-btn">Concerts de Maâlems Gnaoua</a></td>
+                        <td>2024-06-27</td>
+                        <td>Essaouira</td>
+                        <td>concert</td>
+                        <td>
+                            <button class="details-btn" data-id="1">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-1" class="details-row">
+                        <td colspan="5">
+                            <p>Les maâlems gnaoua enchantent avec leurs performances mêlant chants, guembri et qraqeb.</p>
+                            <p>
+                                Les concerts des Maâlems Gnaoua à Essaouira allient musique traditionnelle et influences modernes pour créer une expérience musicale unique.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Fusions Musicales</td>
+                        <td>2024-06-29</td>
+                        <td>Essaouira</td>
+                        <td>Musique</td>
+                        <td>
+                            <button class="details-btn" data-id="2">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-2" class="details-row">
+                        <td colspan="5">
+                            <p>Des fusions inédites entre gnaoua et musiques internationales créent des moments uniques</p>
+                            <p>Ces échanges culturels enrichissent la scène musicale, offrant des performances vibrantes et émouvantes qui transcendent les frontières et unissent les âmes à travers la musique.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Expositions d'art</td>
+                        <td>2024-06-28</td>
+                        <td>Essaouira</td>
+                        <td>Art</td>
+                        <td>
+                            <button class="details-btn" data-id="3">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-3" class="details-row">
+                        <td colspan="5">
+                            <p>Le Festival Gnaoua d'Essaouira plonge dans l'art, dévoilant l'âme gnaouie et l'héritage souiri à travers peintures, photos et artisanat.</p>
+                            <p>Ces expressions artistiques fusionnent pour offrir un voyage visuel inoubliable, célébrant la profondeur et la beauté de l'âme gnaouie et du patrimoine souiri.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ateliers et Conférences</td>
+                        <td>2024-06-26</td>
+                        <td>Essaouira</td>
+                        <td>Ateliers</td>
+                        <td>
+                            <button class="details-btn" data-id="4">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-4" class="details-row">
+                        <td colspan="5">
+                            <p>Des ateliers et discussions sur la culture, l'histoire et le patrimoine gnaoua.</p>
+                            <p>Le Festival Gnaoua d'Essaouira propose une série d'ateliers et de discussions captivants dédiés à la culture, l'histoire et le patrimoine gnaoua. Ces sessions offrent une plongée profonde dans les traditions ancestrales et les histoires fascinantes des gnaouas.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GnawaSoul. Tous droits réservés.</p>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>

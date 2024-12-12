@@ -1,0 +1,112 @@
+/* Style global */
+body {
+    /* Couleur d'arrière-plan et configuration générale */
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Style de l'en-tête */
+header {
+    background-color: #97a878ce; /* Couleur de fond */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Style de la navigation */
+header nav ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline; /* Afficher les liens horizontalement */
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none; /* Supprimer le soulignement */
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+/* Style du formulaire de contact */
+.contact-form {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #2a3908d9; /* Couleur principale */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 48%;
+    font-size: 16px;
+}
+
+.contact-form button[type="reset"] {
+    background-color: #ccc; /* Couleur pour réinitialiser */
+    color: #333;
+}
+
+.contact-form button:hover {
+    background-color: #060606;
+    color: #89252c;
+}
+
+/* Section de la carte */
+.map {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Responsive (petits écrans) */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-form button {
+        width: 100%; /* Boutons en pleine largeur */
+        margin-top: 10px;
+    }
+}
+
+

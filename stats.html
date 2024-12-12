@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assure une mise en page responsive sur les appareils mobiles -->
+    <title>Statistiques des Événements</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="stats.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Lien vers la bibliothèque Chart.js -->
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Statistiques des Événements</h1> <!-- Titre principal de la navigation -->
+            <ul>
+                <li><a href="index.html">Accueil</a></li> <!-- Lien vers la page d'accueil -->
+                <li><a href="events.html">Events</a></li> <!-- Lien vers la page des événements -->
+                <li><a href="stats.html">Statistiques</a></li> <!-- Lien vers la page des statistiques -->
+                <li><a href="contact.html">Contact</a></li> <!-- Lien vers la page de contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="stats-section">
+            <h2>Événements par Catégorie</h2> <!-- Titre de la section des statistiques -->
+            <canvas id="eventChart" width="400" height="400"></canvas> <!-- Zone de dessin pour le graphique -->
+        </section>
+    </main>
+ 
+    <footer>
+        <p>© 2024 GnawaSoul - Tous droits réservés.</p> <!-- Note de copyright -->
+    </footer>
+
+    <script src="stats.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>

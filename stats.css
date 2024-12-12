@@ -1,0 +1,62 @@
+/* Style global */
+body {
+    background: url('background.jpg') center center / cover no-repeat, 
+                linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); /* Image de fond avec dégradé */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements internes par défaut */
+    color: #0e0808; /* Couleur du texte */
+    background-attachment: fixed; /* L'image de fond reste fixe lors du défilement */
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #97a878ce; /* Fond semi-transparent */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 15px 0; /* Espacement interne vertical */
+}
+
+header nav ul {
+    list-style-type: none; /* Supprime les puces de liste */
+    padding: 0; /* Supprime les espacements internes */
+    margin: 0; /* Supprime les marges */
+}
+
+header nav ul li {
+    display: inline; /* Affiche les éléments en ligne */
+    margin: 0 15px; /* Marge horizontale entre les éléments */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Souligne le texte au survol */
+}
+
+/* Section principale */
+.stats-section {
+    background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    margin: 50px auto; /* Marge verticale et centrage horizontal automatique */
+    width: 80%; /* Largeur de la section */
+    max-width: 600px; /* Largeur maximale de la section */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre autour de la section */
+    text-align: center; /* Texte centré */
+}
+
+/* Style du footer */
+footer {
+    background-color: #1a1611; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Texte centré */
+    padding: 10px 0; /* Espacement interne vertical */
+    position: fixed; /* Fixe le footer en bas de la page */
+    bottom: 0; /* Positionne le footer en bas */
+    width: 100%; /* Largeur complète */
+}

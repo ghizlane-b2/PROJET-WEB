@@ -1,0 +1,88 @@
+/* Style global du body */
+body {
+    font-family: Arial, sans-serif; /* Définit la police générale */
+    margin: 0; /* Supprime la marge par défaut du body */
+    padding: 0; /* Supprime le padding par défaut du body */
+    background: url('background1.avif') no-repeat center center fixed; /* Applique une image de fond qui reste fixe en arrière-plan */
+    background-size: cover; /* L'image de fond couvre toute la surface de la fenêtre */
+    color: #333; /* Définit la couleur du texte */
+}
+
+/* Style de l'en-tête (header) */
+header {
+    text-align: center; /* Centre le texte de l'en-tête */
+    padding: 20px 0; /* Espacement en haut et en bas de l'en-tête */
+    background-color: #4f5105; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte */
+}
+
+/* Style du contenu principal */
+main {
+    max-width: 600px; /* Limite la largeur du contenu principal à 600px */
+    margin: 20px auto; /* Centre le contenu et ajoute un espacement vertical */
+    background: white; /* Définit un fond blanc */
+    padding: 20px; /* Espacement à l'intérieur du contenu principal */
+    border-radius: 8px; /* Arrondit les coins du contenu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère autour du contenu */
+}
+
+/* Style du titre principal (h1) */
+h1 {
+    margin: 0; /* Supprime la marge par défaut */
+    font-size: 1.8em; /* Agrandit la taille de la police */
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+    margin-bottom: 15px; /* Ajoute de l'espace entre les champs du formulaire */
+}
+
+/* Style des labels */
+label {
+    display: block; /* Affiche le label sur une nouvelle ligne */
+    margin-bottom: 5px; /* Ajoute un espacement sous le label */
+    font-weight: bold; /* Met le texte du label en gras */
+}
+
+/* Style des champs de saisie (input, select, textarea) */
+input, select, textarea {
+    width: 100%; /* Fait en sorte que les champs occupent toute la largeur disponible */
+    padding: 10px; /* Ajoute un espacement intérieur pour les champs */
+    border: 1px solid #ccc; /* Définit une bordure grise claire */
+    border-radius: 5px; /* Arrondit les coins des champs */
+    font-size: 1em; /* Définit la taille de la police */
+    box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur totale */
+    transition: border-color 0.3s; /* Ajoute une transition douce pour la couleur de la bordure */
+}
+
+/* Effet de focus sur les champs (lorsqu'on clique dessus) */
+input:focus, select:focus, textarea:focus {
+    border-color: #1a1314; /* Change la couleur de la bordure au focus */
+    outline: none; /* Supprime le contour par défaut au focus */
+    box-shadow: 0 0 5px rgba(74, 21, 28, 0.5); /* Ajoute un effet de halo au focus */
+}
+
+/* Style spécifique pour le champ textarea */
+textarea {
+    height: 100px; /* Définit la hauteur de la zone de texte */
+}
+
+/* Style du bouton de soumission */
+button {
+    width: 100%; /* Fait en sorte que le bouton occupe toute la largeur */
+    background-color: #4f5105; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px; /* Espacement intérieur du bouton */
+    border: none; /* Supprime la bordure par défaut du bouton */
+    border-radius: 5px; /* Arrondit les coins du bouton */
+    font-size: 1.1em; /* Agrandit la taille de la police du bouton */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+    transition: background-color 0.3s; /* Ajoute une transition douce pour la couleur de fond */
+}
+
+/* Effet de survol (hover) du bouton */
+button:hover {
+    background-color: #110404; /* Change la couleur du bouton lorsque la souris passe dessus */
+}
+
+

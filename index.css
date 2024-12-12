@@ -1,0 +1,205 @@
+body {
+    background-image: url('background.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Police de caractères */
+}
+
+nav {
+    display: flex; /* Utilise un conteneur flexible */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    background-color: #97a878ce; /* Couleur de fond du menu de navigation */
+    padding: 10px 20px; /* Espacement interne */
+}
+
+nav h1 {
+    margin: 10px; /* Marge autour du titre */
+    font-size: 24px; /* Taille de la police */
+    color: #384306; /* Couleur du texte */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Police de caractères */
+}
+
+.t1{ 
+    background-color: #8b9771; /* Couleur de fond */
+    border-radius: 100%; /* Bord arrondi */
+}
+
+nav ul {
+    display: flex; /* Utilise un conteneur flexible */
+    list-style: none; /* Supprime les puces de liste */
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime les espacements internes */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacement entre les éléments de la liste */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #5c4515; /* Couleur du texte */
+    font-size: 18px; /* Taille de la police */
+    transition: color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+nav ul li a:hover {
+    color: #000; /* Couleur du texte au survol */
+}
+
+.quote {
+    text-align: center; /* Texte centré */
+    font-style: italic; /* Style de police italique */
+    margin-top: 20px; /* Marge en haut */
+    color: #561c24; /* Couleur du texte */
+    font-size: 18px; /* Taille de la police */
+}
+
+main p {
+    margin: 30px; /* Marge autour du paragraphe */
+    color: black; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 20px; /* Espacement interne */
+    border-radius: 20px; /* Coins arrondis */
+    text-align: center; /* Texte centré */
+}
+
+*{
+    box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur et la hauteur */
+    font-family: 'Lato', sans-serif; /* Police de caractères */
+}
+
+.container{
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    display: flex; /* Utilise un conteneur flexible */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    background: #222; /* Couleur de fond */
+    background-image: url('background1.avif'); /* Image de fond */
+}
+
+.wrapper{
+    display: flex; /* Utilise un conteneur flexible */
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante */
+    justify-content: space-between; /* Espace entre les éléments */
+    gap: 15px; /* Espacement entre les éléments */
+}
+
+.card {
+    width: 280px; /* Largeur de la carte */
+    height: 360px; /* Hauteur de la carte */
+    padding: 2rem 1rem; /* Espacement interne */
+    background: #fff; /* Couleur de fond */
+    position: relative; /* Position relative pour les éléments enfants */
+    display: flex; /* Utilise un conteneur flexible */
+    align-items: flex-end; /* Aligne les éléments à la fin du conteneur */
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5); /* Ombre de boîte */
+    transition: 0.5s ease-in-out; /* Transition douce */
+}
+
+.card:hover {
+    transform: translateY(20px); /* Déplacement vers le haut au survol */
+}
+
+.card:before {
+    content: ""; /* Contenu vide pour l'élément avant */
+    position: absolute; /* Position absolue */
+    top: 0; /* En haut du conteneur */
+    left: 0; /* À gauche du conteneur */
+    display: block; /* Affichage en bloc */
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    background: linear-gradient(to bottom,  rgba(24, 28, 26, 0.5), rgba(24, 28, 26, 0.5)); /* Dégradé de fond */
+    z-index: 2; /* Niveau de superposition */
+    transition: 0.5s all; /* Transition douce */
+    opacity: 0; /* Opacité initiale */
+}
+
+.card:hover:before{
+    opacity: 1; /* Opacité au survol */
+}
+
+.card img{
+    width: 100%; /* Largeur complète de l'image */
+    height: 100%; /* Hauteur complète de l'image */
+    object-fit: cover; /* L'image couvre le conteneur */
+    position: absolute; /* Position absolue */
+    top: 0; /* En haut du conteneur */
+    left: 0; /* À gauche du conteneur */
+}
+
+.card .info {
+    position: relative; /* Position relative */
+    z-index: 3; /* Niveau de superposition */
+    color: #fff; /* Couleur du texte */
+    opacity: 0; /* Opacité initiale */
+    transform: translateY(30px); /* Déplacement initial vers le bas */
+    transition: 0.5s all; /* Transition douce */
+}
+
+.card:hover .info {
+    opacity: 1; /* Opacité au survol */
+    transform: translateY(0px); /* Position au survol */
+}
+
+.card .info h1{
+    margin: 0; /* Pas de marge */
+}
+
+.card .info p{
+    letter-spacing: 1px; /* Espacement des lettres */
+    font-size: 15px; /* Taille de la police */
+    margin-top: 8px; /* Marge en haut */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+.card .info .btn{
+    text-decoration: none; /* Pas de soulignement */
+    padding: 0.5rem 1rem; /* Espacement interne */
+    background: #fff; /* Couleur de fond */
+    color: #000; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Curseur pointeur */
+    transition: 0.4s ease-in-out; /* Transition douce */
+}
+
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5); /* Ombre au survol */
+}
+
+footer {
+    background-color: #000; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Texte centré */
+    padding: 20px 10px; /* Espacement interne */
+    margin-top: 40px; /* Marge en haut */
+    position: relative; /* Position relative */
+}
+
+footer p {
+    margin: 0; /* Pas de marge */
+    font-size: 14px; /* Taille de la police */
+}
+
+.add-event-lien {
+    display: inline-block; /* Affichage en bloc inline */
+    margin-top: 10px; /* Marge en haut */
+    padding: 8px 15px; /* Espacement interne */
+    background-color: #6c502d; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold; /* Texte en gras */
+    border-radius: 40%; /* Bordure arrondie */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce pour la couleur de fond et la transformation */
+}
+
+.add-event-lien:hover {
+    background-color: #967357; /* Couleur de survol */
+    transform: scale(1.05); /* Effet de zoom */
+}
+

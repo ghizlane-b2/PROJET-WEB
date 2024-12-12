@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de l'Événement - Maâlems Gnaoua</title>
+    <link rel="stylesheet" href="event-details.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>GnawaSoul - Détails de l'Événement</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stats.html">Statistiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="event-info">
+                <h2>Concerts de Maâlems Gnaoua</h2>
+                <p><strong>Date:</strong> 1er Juin 2024</p>
+                <p><strong>Lieu:</strong> Essaouira, Maroc</p>
+                <p><strong>Type:</strong> Concert</p>
+                <p><strong>Description:</strong> Les concerts des Maâlems Gnaoua à Essaouira mélangent musique traditionnelle et influences modernes, créant une expérience unique avec guembri, qraqeb et collaborations internationales.</p>
+
+                <button id="show-more-btn">Afficher plus de détails</button>
+
+                <section id="more-details" style="display: none;">
+                    <p>Les Maâlems, gardiens de cet art ancestral, élèvent l'expérience en collaborant avec des artistes de renommée mondiale.</p>
+                    <p>Ces performances réunissent des artistes locaux et internationaux, créant une fusion vibrante de rythmes ancestraux et de sonorités contemporaines</p>
+                </section>
+            </section>
+
+            <section id="gallery">
+                <h3>Galerie d'Images</h3>
+                <div id="image-gallery">
+                    <button id="prev-btn">❮</button><!-- Bouton pour naviguer vers l'image précédente -->
+                    <div id="gallery-container">
+                        <img class="gallery-img" src="concert.jpg" alt="Image 1">
+                        <img class="gallery-img" src="fusion.jpg" alt="Image 2">
+                        <img class="gallery-img" src="gnaoua.jpg" alt="Image 3">
+                        <img class="gallery-img" src="conference.jpg" alt="Image 4">
+                    </div>
+                    <button id="next-btn">❯</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="event-details.js"></script>
+</body>
+</html>
